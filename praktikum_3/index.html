@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <!-- Profile Section -->
+    <img src="profil.png" alt="Profil Picture" class="profil">
+
+    <!-- About Me Section -->
+    <div class="text">
+        <h1 class="h1">About Me</h1>
+        <p>Nama Saya Rahadian Candra Vima Yoga, asal Batang Jawa Tengah</p>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="text">
+        <h1 class="h1">Project</h1>
+        <ul>
+            <li><a href="https://rahadiancondro.github.io/Tekweb_2024_2315016160/praktikum_1/">Klik Disini</a> - Hasil Praktikum</li>
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="text">
+        <h1 class="h1">Contact</h1>
+        <p>Email: <a href="mailto:2315016160@webmail.uad.ac.id">Email</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/candravima/" target="_blank">LinkedIn</a></p>
+    </div>
+
+    <!-- Costume Section -->
+    <div class="text">
+        <h1 class="h1">Costume</h1>
+
+        <!-- dark mode -->
+        <div>
+            <label>Dark Mode:</label>
+            <button onclick="toggleDarkMode()" id ="darkmod">Toggle Dark Mode</button>
+        </div>
+
+        <div>
+            <label>Font Style:</label>
+            <button onclick="changeFontStyle('Arial, sans-serif')" >Sans-serif</button>
+            <button onclick="changeFontStyle('Georgia, serif')" >Serif</button>
+            <button onclick="changeFontStyle('monospace')" >Monospace</button>
+        </div>
+
+        <div>
+            <label>Font Size: <span id="fontSizeValue">16px</span></label>
+            <input type="range" 
+               id="fontSizeSlider" 
+               min="12" 
+               max="24" 
+               value="16" 
+               class="slider"
+               oninput="updateFontSize(this.value)">
+        </div>
+
+        <div>
+            <label>Background Color:</label>
+            <button onclick="BGred()">Red</button>
+            <button onclick="BGblue()">Blue</button>
+            <button onclick="BGgreen()">Green</button>
+            <button onclick="BGyellow()">Yellow</button>
+            <button onclick="DefaultBG()">Reset</button>
+        </div>
+    </div>
+
+    <div class="text">
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Masukkan tugas baru...">
+            <button onclick="addTask()" class="add-btn">Tambah</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

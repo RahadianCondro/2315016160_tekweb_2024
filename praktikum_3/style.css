@@ -1,0 +1,191 @@
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    margin: 0;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark-mode .text {
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode h1 {
+    color: #bb86fc;
+}
+
+body.dark-mode a {
+    color: #bb86fc;
+}
+
+body.dark-mode li {
+    background-color: #444;
+    border-left-color: #bb86fc;
+}
+body.dark-mode p{
+    color: #fff;
+}
+
+.profil {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    padding: 5px;
+    width: 200px;
+    box-shadow: 0px 2px 4px grey;
+}
+
+.text {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px gray;
+    max-width: 500px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: blueviolet;
+}
+
+p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: rgb(241, 241, 241);
+    border-left: solid blueviolet 6px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+li a {
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+/* Button Styles */
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* Dark Mode Button Styles */
+body.dark-mode button {
+    background-color: #bb86fc;
+    color: #000;
+}
+
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.add-btn {
+    padding: 8px 16px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: rgb(241, 241, 241);
+    border-left: solid blueviolet 6px;
+    border-radius: 5px;
+}
+
+.task-text {
+    flex: 1;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #ff4444 !important;
+    color: white;
+    padding: 5px 10px !important;
+    margin-left: 10px !important;
+    font-size: 12px !important;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* Dark Mode styles for todo list */
+body.dark-mode #taskInput {
+    background-color: #444;
+    color: #fff;
+    border-color: #bb86fc;
+}
+
+body.dark-mode #taskList li {
+    background-color: #444;
+    border-left-color: #bb86fc;
+}
+
+body.dark-mode .task-text {
+    color: #fff;
+}
