@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remindme - Task Management App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="container mx-auto px-4 py-6">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold">Remind<span class="text-blue-600">me</span></div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="font-medium">Home</a>
+                <a href="#" class="font-medium">Features</a>
+                <a href="#" class="font-medium">About Us</a>
+            </div>
+            <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hidden md:block">
+                Download App
+            </button>
+            <!-- Mobile menu button -->
+            <button class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                    Schedule and Manage Task Easy
+                </h1>
+                <p class="text-gray-600 mb-8">
+                    Create and organize schedule and task deadline become better, easy manage and certainly no longer lagging behind schedule of activities and task
+                </p>
+                <button class="bg-blue-600 text-white px-8 py-3 rounded-lg">
+                    Download App
+                </button>
+            </div>
+            <div class="order-first md:order-last">
+                <img src="./Hero Image.png" alt="Task Management App" class="w-full rounded-lg shadow-lg"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">
+                Set up task and schedule with best features
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="mb-4">
+                        <img src="./schedule.png" alt="Calendar" class="w-12 h-12 object-contain text-blue-600">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Set a better deadline tasks</h3>
+                    <p class="text-gray-600">You can make your duty deadlines better and more orderly</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="mb-4">
+                        <img src="./layer-group.png" alt="Layers" class="w-12 h-12 object-contain text-blue-600">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Manage the tasks so easily</h3>
+                    <p class="text-gray-600">You can manage the deadlines and the schedule becomes easy</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="mb-4">
+                        <img src="./notification-fill.png" alt="Profile" class="w-12 h-12 object-contain text-blue-600">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Wouldn't miss notifications</h3>
+                    <p class="text-gray-600">Of course you will always get the tasks and schedule notifications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">What do they think</h2>
+        <div class="max-w-2xl mx-auto">
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <img src="./Profile.png" alt="Samantha Sench" class="w-20 h-20 rounded-full mx-auto mb-4"/>
+                <h3 class="text-xl font-semibold mb-2">Samantha Sench</h3>
+                <p class="text-gray-600 mb-2">Student at University</p>
+                <p class="text-gray-800 italic">
+                    "Hi, it's Samantha. After using it made me a lot of benefits, starting with convenience of setting a deadline of tasks and schedule after that the app is very simple using."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4 text-gray-600">Remindme</h4>
+                    <p class="text-gray-600">Task deadlines and scheduling applications with various benefits and advantages</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4 text-gray-600">Sitemaps</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-white">Features</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-white">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4 text-gray-600">Advantages</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-white">Set Task Better</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-white">Easy Manage</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-white">Get Notification</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4 text-gray-600">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <!-- Social Media Icons -->
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <img src="./facebook-f.png" alt="Facebook" class="w-6 h-6">
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <img src="./linkedin-alt.png" alt="LinkedIn" class="w-6 h-6">
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <img src="./Vector.png" alt="Twitter" class="w-6 h-6">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
